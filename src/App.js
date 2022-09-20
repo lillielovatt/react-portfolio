@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <header>
+                <p>Lillie Lovatt</p>
+                <About></About>
+                <Portfolio></Portfolio>
+                <Contact></Contact>
+                <Resume></Resume>
+            </header>
+
+            <footer>
+                <a href="https://github.com/lillielovatt">
+                    Check me out on Github
+                </a>
+                <br></br>
+                <a href="https://www.linkedin.com/in/lillie-lovatt-7b2475181/">
+                    Or LinkedIn
+                </a>
+                {/* NEED THIRD PARTY PLATFORM....YOUTUBE? LOL */}
+            </footer>
+        </div>
+    );
 }
 
 export default App;
