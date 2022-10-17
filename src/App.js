@@ -13,34 +13,27 @@ import {
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-    // const returnPage = (pageSelected) => {
-    //     if (pageSelected === "about") {
-    //         return <About />;
-    //     } else if (pageSelected === "contact") {
-    //         return <Contact />;
-    //     } else if (pageSelected === "resume") {
-    //         return <Resume />;
-    //     } else if (pageSelected === "portfolio") {
-    //         return <Portfolio />;
-    //     }
-    // };
-
     return (
         <Router>
             <div>
-                <Header
-                // pageSelected={pageSelected}
-                // setPageSelected={setPageSelected}
-                ></Header>
+                <Header />
                 <Routes>
-                    <Route path="/" element={<About />} />
-                    <Route path="/resume" element={<Resume />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/about" element={<About />} />
+                    <Route path="/react-portfolio/" element={<About />} />
+                    <Route
+                        path="/react-portfolio/resume"
+                        element={<Resume />}
+                    />
+                    <Route
+                        path="/react-portfolio/portfolio"
+                        element={<Portfolio />}
+                    />
+                    <Route
+                        path="/react-portfolio/contact"
+                        element={<Contact />}
+                    />
+                    <Route path="/react-portfolio/about" element={<About />} />
                     <Route path="*" element={<NoMatch />} />
                 </Routes>
-                {/* <main>{returnPage(pageSelected)}</main> */}
                 <Footer />
             </div>
         </Router>

@@ -7,13 +7,13 @@ export default function Header() {
     return (
         <header className="flex-row">
             <h2 className="flex-start">
-                <Link id="link" className="my-name" to="/">
+                <Link id="link" className="my-name" to="/react-portfolio/">
                     Lillie Lovatt
                 </Link>
             </h2>
             <nav className="flex-end">
                 <Link
-                    to="/about"
+                    to="/react-portfolio/about"
                     id="link"
                     onClick={() => setPageSelected("about")}
                     className={`mx-2 ${
@@ -23,7 +23,7 @@ export default function Header() {
                     ABOUT
                 </Link>
                 <Link
-                    to="/portfolio"
+                    to="/react-portfolio/portfolio"
                     id="link"
                     onClick={() => setPageSelected("portfolio")}
                     className={`mx-2 ${
@@ -33,7 +33,7 @@ export default function Header() {
                     PORTFOLIO
                 </Link>
                 <Link
-                    to="/resume"
+                    to="/react-portfolio/resume"
                     id="link"
                     onClick={() => setPageSelected("resume")}
                     className={`mx-2 ${
@@ -43,7 +43,7 @@ export default function Header() {
                     RESUME
                 </Link>
                 <Link
-                    to="/contact"
+                    to="/react-portfolio/contact"
                     id="link"
                     onClick={() => setPageSelected("contact")}
                     className={`mx-2 ${
