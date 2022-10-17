@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Team Profile Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+You have a team, you want to list them, and writing by hand is so 2002. What to do? Try out the new Team Profile Generator! With this handy tool, you can create a brand new HTML sheet with the manager of your team, and all engineers and interns. Every employee has their name, email, and employee ID displayed, as well as a property unique to their role--for managers, it's office number; for engineers, it's their GitHub username; and for interns, it's their school. Go ahead, try it out!
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#Questions)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To use the Team Profile generator, you'll need access to a whole slew of files--the lib folder has all files related to the Object classes built to accomodate data for employees of all types, and at the root you'll find index.js, which you run from the command line, and generateHTML.js which translates the user's data into an HTML file. Additionally, you'll need Node.js to download npm, and the packages "inquirer" for logging user responses, and "fs" for writing to a file. Using your command line, you can do all these steps and be on your way in no time!
 
-### `npm run build`
+## Usage 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When you run "node index.js" (or just, "node index" for those busy bees out there with no time to spare), you'll be prompted with a series of questions, all of which you, the user, are required to answer. By answering the questions, you're creating an array of employees that will be used to dynamically fill in an HTML file (a manager, and as many engineers and interns as you'd like to add).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        
+## Contributing 
+If you'd like to contribute to this project, that's wonderful. You can fork it to your heart's content!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Tests 
+If you'd like to test this, you'll need to clone the repo and follow the [installation](#installation) directions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Or you can follow along in [this video I made!](https://drive.google.com/file/d/1PLyMgVg5jckH9n5h4NxTFVSkoRm9vG3B/view)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Questions
+Check out my [GitHub profile](https://github.com/lillielovatt)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have more questions, email me! <lillielovatt@gmail.com> 
